@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="msapplication-window" content="width=device-width;height=device-height"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+  <title>YourSBA.com Loan Scenario Engine</title>
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
+  
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <!--[if lte IE 8]>
+      <link rel="stylesheet" type="text/css" href="css/ie7.css">
+  <![endif]-->
+  <script src="js/1.7.1/jquery.min.js"></script>
+  <script src="js/materialize.js"></script>
+
+  <script src="js/pageLoad.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="top-nav">
+      <div class="container">
+        <div class="nav-wrapper"><h1>YourSBA.com Loan Scenario Engine</h1></div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="row sub-heading">
+    <div class="col s12">
+      <p>
+        This calculator will estimate some of the costs and payments associated with an SBA 7(a) Loan.
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+      <div class="col s12">
+
+        <form class="inputF">
+
+          <div class="row">
+            <div class="col s12 input-block">
+        
+              <div class="card grey lighten-5">
+                <div class="card-content brown-text">
+                  
+                  <div class="input-field col s12" id="email-block">
+                    <i class="material-icons prefix">email</i>
+                    <input id="email" type="text" class="validate email">
+                    <label for="email">Email Address for delivery of this PDF report<span class="required">&nbsp;*</span></label>
+                  </div>
+
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">person</i>
+                    <input id="userName" type="text" class="validate userName">
+                    <label for="userName">Requested By<span class="required">&nbsp;*</span></label>
+                  </div>
+
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">business</i>
+                    <input id="projName" type="text" class="validate projName">
+                    <label for="projName">Name of the Project</label>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col s12">
+            <p class="card-block-header"><strong>Broker or Seller Contact Information (optional):</strong></p>
+          </div>
+
+          <div class="row">
+            <div class="col s12 input-block">
+        
+              <div class="card grey lighten-5">
+                <div class="card-content brown-text">
+
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">person</i>
+                    <input id="contact" type="text" class="validate contact">
+                    <label for="contact">Name</label>
+                  </div>
+
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">business</i>
+                    <input id="contact_company" type="text" class="validate contact_company">
+                    <label for="contact_company">Company Name</label>
+                  </div>
+
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">email</i>
+                    <input id="contact_email" type="text" class="validate contact_email">
+                    <label for="contact_email">Email Address</label>
+                  </div>
+
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">phone</i>
+                    <input id="contact_phone" type="text" class="validate contact_phone">
+                    <label for="contact_phone">Phone Number</label>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="col s12">
+            <p class="card-block-header"><strong>Enter the Project Cost details:</strong></p>
+          </div>
+
+          <div class="row">
+            <div class="col s12 input-block">
+        
+              <div class="card grey lighten-5">
+                <div class="card-content brown-text">
+
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">attach_money</i>
+                    <input id="priceHome" type="text" class="validate priceHome" value="350,000" size="10">
+                    <label for="priceHome">Real Estate (CRE)</label>
+                  </div>
+
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">attach_money</i>
+                    <input id="priceGoodWill" type="text" class="validate priceGoodWill" value="350,000" size="10">
+                    <label for="priceGoodWill">Business Only Price (Goodwill)</label>
+                  </div>
+
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">attach_money</i>
+                    <input id="priceInventory" type="text" class="validate priceInventory" value="0" size="10">
+                    <label for="priceInventory">Inventory</label>
+                  </div>
+
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">attach_money</i>
+                    <input id="priceFFE" type="text" class="validate priceFFE" value="0" size="10">
+                    <label for="priceFFE">Furniture, Fixtures & Equipment (FF&E)</label>
+                  </div>
+
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">attach_money</i>
+                    <input id="priceWork" type="text" class="validate priceWork" value="0" size="10">
+                    <label for="priceWork">Working Capital Requested</label>
+                  </div>
+
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">attach_money</i>
+                    <input id="priceOther" type="text" class="validate priceOther" value="0" size="10">
+                    <label for="priceOther">Other Costs (optional)</label>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </form>
+
+      </div>
+  </div>
+
+  <div class="row btn-gruop">
+    <button class="btn waves-effect waves-light submit" type="submit" name="action">Submit</button>
+
+    <button class="btn waves-effect waves-light reset" type="reset">Reset</button>
+  </div>
+
+    <div id="schedule"></div>
+
+  <div class="row disclaimer">
+    <div class="col s10 offset-s1">
+        The information on this document is for discussion purposes only and not a commitment to lend. 
+        These are estimates based on information provided to YourSBA.com by third party sources and 
+        may be higher or lower depending on the final loan amount and prospective lender. 
+        The information has not been verified as to its accuracy and is subject to change as parameters 
+        are further defined.
+    </div>
+  </div>  
+  
+  <!-- Modal Structure for results-->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+    </div>
+  </div>
+
+  <!-- Modal Structure for loading-->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+
+      <!-- Preloader -->
+      <div class="preloader-wrapper small active">
+        <div class="spinner-layer spinner-blue">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+
+        <div class="spinner-layer spinner-red">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+
+        <div class="spinner-layer spinner-yellow">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+
+        <div class="spinner-layer spinner-green">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="preloader-text">
+        <p><strong>Please wait while the report is generated!</strong></p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+<script>
+$('input.inTxt').keyup(function(event) {
+      
+    // skip for arrow keys
+    if(event.which >= 37 && event.which <= 40) return;
+    
+    // format number
+    $(this).val(function(index, value) {
+        return value
+            .replace(/\D/g, '')
+            .replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+        ;
+    });
+});
+</script>
+</html>

@@ -1,0 +1,199 @@
+/*-----------------------------------------------------------------------------------------------*/
+/*                                          GENERAL STYLES                                       */
+/*-----------------------------------------------------------------------------------------------*/
+html {
+    background-image: none !important;
+}
+
+body {
+    margin-top: -30px;
+    /*background-image: url('../images/calc-background.jpg');*/
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+.fixedBGdiv {
+    margin-top: -60px;
+    overflow-y: visible !important;
+    height: 560px !important;
+}
+
+/* Hide the default Appypie Header */
+header.header {
+    display: none !important;
+}
+
+.blue {
+    background: none !important;
+}
+
+.page-content {
+  background: rgba(0, 0, 0, 0) !important;
+}
+
+nav {
+    background-color: #00AD73;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 130%;
+    padding-top: 15px;
+}
+
+.sub-heading {
+    padding-top: 85px;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #004A9C;
+    font-weight: bold;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+
+    width: 110% !important;
+    margin-left: -15px !important;
+}
+
+.required {
+    color: red;
+}
+
+.card-block-header {
+    color: brown;
+    font-weight: bold;
+}
+
+.card-block-header strong {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.card, .card-content {
+    padding: 20px 5px !important;
+}
+
+.input-block {
+    padding: 0px 0.2rem !important;
+}
+
+.input-field {
+    padding-right: 8% !important;
+    margin-left: -15px !important;
+    width: 110% !important;
+}
+
+.input-field label.active {
+  font-size: 1rem;
+}
+
+.input-field .prefix {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.btn-gruop {
+    text-align: center;
+}
+
+.submit {
+    background-color: #00AD73;
+}
+
+.submit:hover {
+    background-color: #06bf96;
+}
+
+.reset {
+    background-color: #004A9C;
+}
+
+.reset:hover {
+    background-color: #065fbf;
+}
+
+.disclaimer {
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    color: brown;
+}
+
+.customtoast {
+    position: fixed;
+    top: 30% !important;
+    left: 10%;
+}
+
+.customtoast1 {
+    position: fixed;
+    top: 30% !important;
+    left: 10%;
+    background-color: #f4f4f4;
+    color: brown;
+}
+
+.modal {
+    width: 95% !important;
+}
+
+.modal-content {
+    background-color: #f4f4f4;
+}
+
+#modal2 {
+    top: 45% !important;
+}
+
+.preloader-wrapper, .preloader-text {
+    display: inline-block;
+}
+
+.modal h5 {
+    font-size: 1.3rem;
+}
+
+.modal h6 {
+    font-size: 1.2rem;
+    border-bottom: 1px solid #004a9c;
+    display: inline-block;
+}
+
+table tr:nth-child(odd) {
+  color: #004A9C;
+}
+
+table tr:nth-child(even) {
+  color: #00AD73;
+}
+/*-----------------------------------------------------------------------------------------------*/
+/*                                         Waiting Animation                                     */
+/*-----------------------------------------------------------------------------------------------*/
+
+
+
+.waiting {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 );
+}
+.center {
+    position: fixed;
+    top: 50%;
+    left:50%;
+}
+body.loading {
+    overflow: hidden;   
+}
+
+body.loading .waiting {
+    display: block;
+}
