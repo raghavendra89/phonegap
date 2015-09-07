@@ -91,9 +91,13 @@ header h1 {
   font-size: 1rem;
 }
 
+img.prefix { 
+    width: 30px !important;
+    margin-left: 10px !important;
+}
+
 .input-field .prefix {
     margin-top: 10px;
-    margin-left: 10px;
 }
 
 .btn-gruop {
