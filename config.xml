@@ -17,4 +17,7 @@
         YourSBA
     </author>
 
+    <preference name="android-build-tool" value="ant" />
+    <preference name="android-minSdkVersion" value="14" />
+
 </widget>
